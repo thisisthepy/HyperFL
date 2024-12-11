@@ -3,11 +3,11 @@
 The implementation of [A New Federated Learning Framework Against Gradient Inversion Attacks](https://arxiv.org/abs/2412.07187) [AAAI 2025]. \
 [Pengxin Guo](https://pengxin-guo.github.io)\*, [Shuang Zeng](https://scholar.google.com/citations?user=yTP1oqkAAAAJ&hl=en)\*, Wenhao Chen, Xiaodan Zhang, Weihong Ren, Yuyin Zhou, and [Liangqiong Qu](https://liangqiong.github.io).
 
-<img src="./figs/motivation.png" alt="motivation" width="450" /> 
+<img src="./figs/motivation.png" alt="motivation" width="500" /> 
 
 ##### Figure 1. *Left*. Existing methods mainly explore defenses mechanisms on the shared gradients. Such mechanisms, including SMC, HE, and DP, inherently involve substantial privacy-utility trade-offs. *Right*. A novel FL framework that “breaks the direct connection” between the shared parameters and the local private data is proposed to achieve a favorable privacy-utility trade-off.
 
-<img src="./figs/HyperFL.png" alt="framework" width="700" /> 
+<img src="./figs/HyperFL.png" alt="framework" width="800" /> 
 
 ##### Figure 2. The proposed HyperFL framework. HyperFL decouples each client’s network into the former feature extractor $f(; \theta_i)$ and the latter classifier head $g(;{\phi _i})$. An auxiliary hypernetwork $h(;{\varphi _i})$ is introduced to generate local clients’ feature extractor $f(; \theta_i)$  using the client’s private embedding vector $\mathbf{v}_i$, i.e.,  ${\theta _i} = h({{\bf{v}}_i};{\varphi _i})$. These generated parameters are then used to extract features from the input ${x}_i$, which are subsequently fed into the classifier to obtain the output $\hat{y}_i$, expressed as $\hat{y}_i = g( f({x}_i; \theta_i); \phi_i)$. Throughout the FL training, **only** the hypernetwork  $\varphi_i$ is shared, while all other components are kept private, thus effectively mitigating potential privacy leakage concerns.
 

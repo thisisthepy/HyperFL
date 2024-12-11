@@ -1,5 +1,8 @@
 # A New Federated Learning Framework Against Gradient Inversion Attacks
 
+The implementation of [A New Federated Learning Framework Against Gradient Inversion Attacks](https://arxiv.org/abs/2412.07187) [AAAI 2025]. \
+[Pengxin Guo](https://pengxin-guo.github.io)\*, [Shuang Zeng](https://scholar.google.com/citations?user=yTP1oqkAAAAJ&hl=en)\*, Wenhao Chen, Xiaodan Zhang, Weihong Ren, Yuyin Zhou, and [Liangqiong Qu](https://liangqiong.github.io).
+
 
 ## Requirements
 
